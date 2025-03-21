@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: white;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: blue;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+        }
+        .hero {
+            background: #2C2C2C;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .btn {
+            background: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            text-align: center;
+        }
+        .feature {
+            max-width: 200px;
+        }
+        .services, .team, .footer {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .services img, .team img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            margin: 10px;
+            text-align: center;
+        }
+        .footer {
+            background: #2C2C2C;
+            color: white;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><span>Web</span>Studio</div>
+        <nav class="nav">
+            <a href="#">Студія</a>
+            <a href="#">Портфоліо</a>
+            <a href="#">Контакти</a>
+        </nav>
+        <div>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a> |
+            +38 096 111 11 11
+        </div>
+    </header>
+    <section class="hero">
+        <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+        <button class="btn">Замовити послугу</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+        </div>
+        <div class="feature">
+            <h3>ПУНКТУАЛЬНІСТЬ</h3>
+            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+        </div>
+        <div class="feature">
+            <h3>ПЛАНУВАННЯ</h3>
+            <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+        </div>
+        <div class="feature">
+            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Чим ми займаємося</h2>
+        <img src="service1.jpg" alt="Service 1">
+        <img src="service2.jpg" alt="Service 2">
+        <img src="service3.jpg" alt="Service 3">
+    </section>
+    <section class="team">
+        <h2>Наша команда</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="team1.jpg" alt="Ігор Дем'яненко">
+                <h3>Ігор Дем'яненко</h3>
+                <p>Product Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Ольга Репіна">
+                <h3>Ольга Репіна</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="Микола Тарасов">
+                <h3>Микола Тарасов</h3>
+                <p>Marketing</p>
+            </div>
+            <div class="team-member">
+                <img src="team4.jpg" alt="Михайло Єрмаков">
+                <h3>Михайло Єрмаков</h3>
+                <p>UI Designer</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <h3><span>Web</span>Studio</h3>
+        <p>м. Київ, пр-т Лесі Українки, 26</p>
+        <p>info@devstudio.com</p>
+        <p>+38 096 111 11 11</p>
+    </footer>
+</body>
+</html>
