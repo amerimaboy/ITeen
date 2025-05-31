@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebStudio Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header, footer {
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 10px;
+      margin: 30px 0;
+    }
+
+    .filter-tabs button {
+      padding: 10px 20px;
+      border: none;
+      background: #f1f1f1;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .filter-tabs .active {
+      background-color: #2196f3;
+      color: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-body h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .card-body p {
+      font-size: 13px;
+      color: #777;
+    }
+
+    footer {
+      background: #1d1d1d;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    .footer-highlight {
+      color: #2196f3;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container topbar">
+      <div class="logo"><strong>Web</strong>Studio</div>
+      <div class="contact-info">
+        <a href="mailto:info@webstudio.com">info@webstudio.com</a> |
+        +00 (000) 00 00 000
+      </div>
+    </div>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index2.html">Студія</a></li>
+          <li><a href="#">Портфоліо</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="filter-tabs">
+      <button class="active">Усі</button>
+      <button>Веб-сайти</button>
+      <button>Додатки</button>
+      <button>Дизайн</button>
+      <button>Маркетинг</button>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <img src="pictures/p1.png" alt="Project 1">
+        <div class="card-body">
+          <h3>Технокряк</h3>
+          <p>Веб-сайт</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/p2.png" alt="Project 2">
+        <div class="card-body">
+          <h3>Постер New Orleans vs Golden Star</h3>
+          <p>Дизайн</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/p3.png" alt="Project 3">
+        <div class="card-body">
+          <h3>Ресторан Seafood</h3>
+          <p>Дизайн</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/p4.png" alt="Project 4">
+        <div class="card-body">
+          <h3>Проєкт Prime</h3>
+          <p>Маркетинг</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/p5.png" alt="Project 5">
+        <div class="card-body">
+          <h3>Проєкт Boxes</h3>
+          <p>Дизайн</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/p6.png" alt="Project 6">
+        <div class="card-body">
+          <h3>Inspiration has no Borders</h3>
+          <p>Веб-сайт</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/p7.png" alt="Project 7">
+        <div class="card-body">
+          <h3>Видання Limited Edition</h3>
+          <p>Дизайн</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/p8.png" alt="Project 8">
+        <div class="card-body">
+          <h3>Проєкт LAB</h3>
+          <p>Маркетинг</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pictures/p9.png" alt="Project 9">
+        <div class="card-body">
+          <h3>Growing Business</h3>
+          <p>Веб-сайт</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p><span class="footer-highlight">Web</span>Studio</p>
+      <p>м. Київ, пр-т Лесі Українки, 26</p>
+      <p>info@webstudio.com | +00 (000) 00 00 000</p>
+    </div>
+  </footer>
+
+</body>
+</html>
