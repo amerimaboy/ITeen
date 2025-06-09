@@ -4,13 +4,13 @@ body {
   line-height: 1.5;
 }
 
-/* Headers and logo use Raleway */
+
 h1, h2, h3, .header__logo {
   font-family: 'Raleway', sans-serif;
   line-height: 1.2;
 }
 
-/* Контейнер */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -18,7 +18,7 @@ h1, h2, h3, .header__logo {
   box-sizing: border-box;
 }
 
-/* Header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -55,7 +55,7 @@ h1, h2, h3, .header__logo {
   align-items: center;
 }
 
-/* Hero section */
+
 .hero {
   background: #2C2C2C;
   color: white;
@@ -82,7 +82,7 @@ h1, h2, h3, .header__logo {
   font-size: 16px;
 }
 
-/* Features section */
+
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -99,7 +99,7 @@ h1, h2, h3, .header__logo {
   align-items: center;
 }
 
-/* Services section */
+
 .services {
   display: flex;
   flex-direction: column;
@@ -114,12 +114,12 @@ h1, h2, h3, .header__logo {
   border-radius: 10px;
 }
 
-/* Якщо хочеш вирівняти картинки в ряд: */
+
 .services__image + .services__image {
   margin-left: 20px;
 }
 
-/* Team section */
+
 .team {
   display: flex;
   flex-direction: column;
@@ -148,7 +148,7 @@ h1, h2, h3, .header__logo {
   margin-bottom: 10px;
 }
 
-/* Footer */
+
 .footer {
   background: #2C2C2C;
   color: white;
@@ -161,7 +161,7 @@ h1, h2, h3, .header__logo {
   color: blue;
 }
 
-/* Відступи у секціях */
+
 section {
   padding-top: 40px;
   padding-bottom: 40px;
