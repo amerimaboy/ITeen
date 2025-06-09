@@ -1,0 +1,34 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  /* width: 100%; */
+  display: block;
+  height: auto;
+}
+
+.magnit::after {
+  position:absolute;
+  content: "";
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  z-index: -10;
+
+  width: 100%;
+  height: 100%;
+  background: #285f73;
+  background: linear-gradient(
+    176deg,
+    rgba(40, 95, 115, 1) 0%,
+    rgba(152, 143, 66, 1) 68%
+  );
+}
+.magnit {
+  position:relative;
+}
