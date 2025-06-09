@@ -160,3 +160,9 @@ h1, h2, h3, .header__logo {
   cursor: pointer;
   font-size: 16px;
 }
+.container {
+  max-width: 1200px;      
+  margin: 0 auto;         
+  padding: 0 15px;        
+  box-sizing: border-box; 
+}
