@@ -1,110 +1,6 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-}
-
-.hero__title,
-.features__title,
-.services__title,
-.team__title,
-.team__name,
-.header__logo {
-  font-family: 'Raleway', sans-serif;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background: white;
-}
-
-.header__logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.header__logo-span {
-  color: blue;
-}
-
-.header__nav-link {
-  margin: 0 15px;
-  text-decoration: none;
-  color: black;
-}
-
-.hero {
-  background: #2C2C2C;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero__title {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.hero__btn {
-  background: blue;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.features {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px;
-  text-align: center;
-}
-
-.features__item {
-  max-width: 200px;
-}
-
-.services,
-.team,
-.footer {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.services__image,
-.team__image {
-  width: 30%;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.team__members {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.team__member {
-  margin: 10px;
-  text-align: center;
-}
-
-.footer {
-  background: #2C2C2C;
-  color: white;
-  padding: 40px;
-}
-
-.footer__brand {
-  color: blue;
-}
-/* Base font-family and line-height */
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
 }
 
@@ -114,14 +10,22 @@ h1, h2, h3, .header__logo {
   line-height: 1.2;
 }
 
-/* Other styles... (your existing CSS) */
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
 
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
   background: white;
+  flex-wrap: wrap;
 }
 
 .header__logo {
@@ -133,10 +37,22 @@ h1, h2, h3, .header__logo {
   color: blue;
 }
 
+.header__nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 .header__nav-link {
-  margin: 0 15px;
   text-decoration: none;
   color: black;
+}
+
+.header__contacts {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Hero section */
@@ -145,11 +61,16 @@ h1, h2, h3, .header__logo {
   color: white;
   text-align: center;
   padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__title {
   font-size: 36px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .hero__btn {
@@ -160,9 +81,94 @@ h1, h2, h3, .header__logo {
   cursor: pointer;
   font-size: 16px;
 }
-.container {
-  max-width: 1200px;      
-  margin: 0 auto;         
-  padding: 0 15px;        
-  box-sizing: border-box; 
+
+/* Features section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features__item {
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Services section */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.services__image {
+  width: 30%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Якщо хочеш вирівняти картинки в ряд: */
+.services__image + .services__image {
+  margin-left: 20px;
+}
+
+/* Team section */
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.team__members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 220px;
+  text-align: center;
+}
+
+.team__image {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background: #2C2C2C;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__brand {
+  color: blue;
+}
+
+/* Відступи у секціях */
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.services__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
