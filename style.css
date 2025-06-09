@@ -1,6 +1,15 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero h1,
+.features h3,
+.services h2,
+.team h2,
+.team-member h3,
+.logo {
+    font-family: 'Raleway', sans-serif;
 }
 
 .header {
