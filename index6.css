@@ -1,0 +1,119 @@
+/* Пофарбуйте h3 з текстом в рожевий колір */
+.text-box h3:first-of-type {
+    color: pink;
+}
+
+/* Пофарбуйте p з id greycol в сірий колір */
+#greycol {
+    color: grey;
+}
+
+/* Пофарбуйте p всередині div в червоний колір */
+.text-box div > p {
+    color: red;
+}
+
+/* Пофарбуйте останній p в зелений колір */
+.text-box p:nth-of-type(3) {
+    color: green;
+}
+
+/* Пофарбуйте p з класом yellow в жовтий колір */
+.yellow {
+    color: yellow;
+}
+/* Контейнер */
+.schedule {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.day {
+  margin-bottom: 30px;
+}
+
+.day h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul.lessons {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.lessons li {
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+/* Різні кольори для кожного дня */
+.monday li {
+  background-color: #3498db; /* блакитний */
+}
+
+.tuesday li {
+  background-color: #e67e22; /* помаранчевий */
+}
+
+.wednesday li {
+  background-color: #2ecc71; /* зелений */
+}
+
+.thursday li {
+  background-color: #9b59b6; /* фіолетовий */
+}
+
+.friday li {
+  background-color: #e74c3c; /* червоний */
+}
+
+/* 5 типів псевдокласів стану */
+ul.lessons li:hover {
+  filter: brightness(110%);
+}
+
+ul.lessons li:focus {
+  outline: 2px solid yellow;
+  background-color: #34495e !important;
+}
+
+ul.lessons li:active {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+ul.lessons li:first-child:hover {
+  font-weight: bold;
+}
+
+ul.lessons li:last-child:hover {
+  text-decoration: underline;
+}
+
+/* 5 типів структурних псевдокласів */
+ul.lessons li:nth-child(odd) {
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+ul.lessons li:nth-child(even) {
+  opacity: 0.85;
+}
+
+ul.lessons li:first-child {
+  border-left: 5px solid #f1c40f;
+}
+
+ul.lessons li:last-child {
+  border-right: 5px solid #f1c40f;
+}
+
+ul.lessons li:nth-last-child(2) {
+  font-style: italic;
+}
