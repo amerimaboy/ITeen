@@ -1,0 +1,35 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base font-family and line-height */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Headers */
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.2;
+}
+
+/* Other Portfolio styles */
+
+header, footer {
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Your existing styles for nav, grid, cards, etc. */

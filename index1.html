@@ -1,69 +1,82 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebStudio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo"><span>Web</span>Studio</div>
-        <nav class="nav">
-            <a href="#">Студія</a>
-            <a href="portfolio.html">Портфоліо</a>
-            <a href="#">Контакти</a>
-        </nav>
-        <div>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a> |
-            +38 096 111 11 11
-        </div>
-    </header>
-    <section class="hero">
-        <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button class="btn">Замовити послугу</button>
-    </section>
-    <section class="features">
-        <div class="feature">
-            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-        </div>
-        <div class="feature">
-            <h3>ПУНКТУАЛЬНІСТЬ</h3>
-            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-        </div>
-        <div class="feature">
-            <h3>ПЛАНУВАННЯ</h3>
-            <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-        </div>
-        <div class="feature">
-            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-        </div>
-    </section>
-    <section class="services">
-        <h2>Чим ми займаємося</h2>
-        <img src="service1.jpg" alt="Service 1">
-        <img src="service2.jpg" alt="Service 2">
-        <img src="service3.jpg" alt="Service 3">
-    </section>
-    <section class="team">
-        <h2>Наша команда</h2>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="team1.jpg" alt="Ігор Дем'яненко">
-                <h3>Ігор Дем'яненко</h3>
-                <p>Product Designer</p>
-            </div>
-            <div class="team-member">
-                <img src="team2.jpg" alt="Ольга Репіна">
-                <h3>Ольга Репіна</h3>
-                <p>Frontend Developer</p>
-            </div>
-            <div class="team-member">
-                <img src="team3.jpg" alt="Микола Тарасов">
-                <h3>Микола Тарасов</h3>
-                <p>Marketing</p>
-            </div>
-            <d
+  <header class="header">
+    <div class="header__logo"><span class="header__logo-span">Web</span>Studio</div>
+    <nav class="header__nav">
+      <a href="#" class="header__nav-link">Студія</a>
+      <a href="portfolio.html" class="header__nav-link">Портфоліо</a>
+      <a href="#" class="header__nav-link">Контакти</a>
+    </nav>
+    <div class="header__contacts">
+      <a href="mailto:info@devstudio.com" class="header__contacts-mail">info@devstudio.com</a> |
+      <span class="header__contacts-phone">+38 096 111 11 11</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+    <button class="hero__btn">Замовити послугу</button>
+  </section>
+
+  <section class="features">
+    <div class="features__item">
+      <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+      <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+    </div>
+    <div class="features__item">
+      <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
+      <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+    </div>
+    <div class="features__item">
+      <h3 class="features__title">ПЛАНУВАННЯ</h3>
+      <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+    </div>
+    <div class="features__item">
+      <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+      <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2 class="services__title">Чим ми займаємося</h2>
+    <img src="service1.jpg" alt="Service 1" class="services__image">
+    <img src="service2.jpg" alt="Service 2" class="services__image">
+    <img src="service3.jpg" alt="Service 3" class="services__image">
+  </section>
+
+  <section class="team">
+    <h2 class="team__title">Наша команда</h2>
+    <div class="team__members">
+      <div class="team__member">
+        <img src="team1.jpg" alt="Ігор Дем'яненко" class="team__image">
+        <h3 class="team__name">Ігор Дем'яненко</h3>
+        <p class="team__position">Product Designer</p>
+      </div>
+      <div class="team__member">
+        <img src="team2.jpg" alt="Ольга Репіна" class="team__image">
+        <h3 class="team__name">Ольга Репіна</h3>
+        <p class="team__position">Frontend Developer</p>
+      </div>
+      <div class="team__member">
+        <img src="team3.jpg" alt="Микола Тарасов" class="team__image">
+        <h3 class="team__name">Микола Тарасов</h3>
+        <p class="team__position">Marketing</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="footer__copyright">
+      © 2024 <span class="footer__brand">WebStudio</span>
+    </span>
+  </footer>
+</body>
+</html>

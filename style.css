@@ -1,103 +1,162 @@
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-.hero h1,
-.features h3,
-.services h2,
-.team h2,
-.team-member h3,
-.logo {
-    font-family: 'Raleway', sans-serif;
+.hero__title,
+.features__title,
+.services__title,
+.team__title,
+.team__name,
+.header__logo {
+  font-family: 'Raleway', sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.logo span {
-    color: blue;
+.header__logo-span {
+  color: blue;
 }
 
-.nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: black;
+.header__nav-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
 }
 
 .hero {
-    background: #2C2C2C;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+  background: #2C2C2C;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 36px;
-    font-weight: bold;
+.hero__title {
+  font-size: 36px;
+  font-weight: bold;
 }
 
-.btn {
-    background: blue;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+.hero__btn {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .features {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  text-align: center;
 }
 
-.feature {
-    max-width: 200px;
+.features__item {
+  max-width: 200px;
 }
 
 .services,
 .team,
 .footer {
-    text-align: center;
-    padding: 50px 20px;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-.services img,
-.team img {
-    width: 30%;
-    margin: 10px;
-    border-radius: 10px;
+.services__image,
+.team__image {
+  width: 30%;
+  margin: 10px;
+  border-radius: 10px;
 }
 
-.team-members {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.team__members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.team-member {
-    margin: 10px;
-    text-align: center;
+.team__member {
+  margin: 10px;
+  text-align: center;
 }
 
 .footer {
-    background: #2C2C2C;
-    color: white;
-    padding: 40px;
+  background: #2C2C2C;
+  color: white;
+  padding: 40px;
 }
 
-.footer span {
-    color: blue;
+.footer__brand {
+  color: blue;
+}
+/* Base font-family and line-height */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+/* Headers and logo use Raleway */
+h1, h2, h3, .header__logo {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.2;
+}
+
+/* Other styles... (your existing CSS) */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__logo-span {
+  color: blue;
+}
+
+.header__nav-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Hero section */
+.hero {
+  background: #2C2C2C;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero__title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero__btn {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
