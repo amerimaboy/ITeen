@@ -57,7 +57,7 @@ h1, h2, h3, .header__logo {
 
 
 .hero {
-  background: #2C2C2C;
+  background: url("picsWeb/hero-bg.jpg") center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -65,7 +65,10 @@ h1, h2, h3, .header__logo {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  min-height: 500px;
 }
+
 
 .hero__title {
   font-size: 36px;
@@ -191,20 +194,21 @@ section {
 }
 
 .features__item:nth-child(1)::before {
-  background-image: url("icon1.png"); 
+  background-image: url("picsWeb/satellite.png"); 
 }
 
 .features__item:nth-child(2)::before {
-  background-image: url("icon2.png");
+  background-image: url("picsWeb/clock.png");
 }
 
 .features__item:nth-child(3)::before {
-  background-image: url("icon3.png");
+  background-image: url("picsWeb/computer.png");
 }
 
 .features__item:nth-child(4)::before {
-  background-image: url("icon4.png");
+  background-image: url("picsWeb/astronaut.png");
 }
+
 
 .features {
   display: flex;
